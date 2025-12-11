@@ -37,24 +37,24 @@ header {
     border: black 7px solid;
 }
 h1 {
-    padding: 40px 100px;
+    padding: 40px 20px;
+    justify-self: center;
 }
 #title {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+    align-items: center;
     padding: 20px;
-    justify-content: center;
 }
 #logo {
     height: 150px;
-    position: absolute;
-    top: 45px;
-    left: 45px;
+    justify-self: start;
 }
 header a {
     font-size: 30px;
     font-weight: bold;
-    padding: 5px 45px;
+    padding: 10px;
     border: black 3px solid;
     text-align: center;
     align-items: center;
@@ -64,10 +64,11 @@ header a {
     background-color: gray;
 }
 nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 15px 10px;
+    flex-wrap: wrap;
 }
 main {
     background-color: #FFF3E0;

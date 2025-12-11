@@ -17,6 +17,7 @@ h1, h2, h3, h4 {
     padding: 10px;
     background-color: gray;
     border-radius: 10px;
+    border: black 3px solid
 }
 p, ol, ul {
     font-family: "Crushed", sans-serif;
@@ -97,10 +98,12 @@ main {
     background-color: gray;
     padding: 40px;
     border-radius: 10px;
+    border: black 3px solid
 }
 #tiplist h3 {
     margin-top: 0;
     padding: 0;
+    border: none;
 }
 #iceimages {
     display: grid;

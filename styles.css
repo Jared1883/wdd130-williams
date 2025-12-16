@@ -16,10 +16,11 @@ h1, h2, h3, h4 {
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
-    padding: 10px;
+    padding: 15px;
     background-color: gray;
     border-radius: 10px;
-    border: black 3px solid
+    border: black 3px solid;
+    margin: 0 auto;
 }
 li {
     margin-bottom: 10px;
@@ -69,8 +70,9 @@ main {
     background-color: #FFF3E0;
     justify-items: center;
     width: 100%;
+    padding: 15px 0;
 }
-#midbox {
+.midbox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,21 +80,26 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+.midbox h2 {
+    margin-top: 15px;
+}
 #heroimg {
     height: 200px;
     width: 200px;
     border: gray 3px solid;
     border-radius: 10px;
 }
-#tiplist {
+.tiplist {
     background-color: gray;
     padding: 40px;
     border-radius: 10px;
-    border: black 3px solid
+    border: black 3px solid;
+    width: fit-content;
 }
-#tiplist h3 {
+.tiplist h3 {
     margin-top: 0;
-    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
     border: none;
     background: none;
 }
@@ -121,17 +128,22 @@ main {
     transform: scale(1.1);
     animation: shake 0.3s;
 }
-
-.mint {
-    background-color: #A8E6CF;
+#vanillaimg{
+    height: 650px;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
-.blue {
-    background-color: #B3E5FC;
+#chocolateimg{
+    height: 650px;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
-.purple {
-    background-color: #D7BDE2;
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
 }
-
 footer {
     background-color: #8B5E3C;
     padding: 35px;
